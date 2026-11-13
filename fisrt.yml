@@ -1,0 +1,9 @@
+jobs:
+  first_job:
+      runs_on: ubuntu_latest
+      steps:
+        - name: welcome message
+          run: echo "Hello"
+
+        - name: list_files
+         run: ls
