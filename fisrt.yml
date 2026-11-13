@@ -1,9 +1,22 @@
+
+name: First GitHub Actions Workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   first_job:
-      runs_on: ubuntu_latest
-      steps:
-        - name: welcome message
-          run: echo "Hello"
+    runs-on: ubuntu-latest
 
-        - name: list_files
-         run: ls
+    steps:
+      - name: welcome message
+        run: echo "Hello"
+
+      - name: list files
+        run: ls
+
+      - name: read file
+        run: cat README.md
